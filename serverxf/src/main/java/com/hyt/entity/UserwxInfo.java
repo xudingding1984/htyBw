@@ -1,122 +1,63 @@
-package com.hyt.entity; /***********************************************************************
- * Module:  UserwxInfo.java
- * Author:  xdd
- * Purpose: Defines the Class UserwxInfo
- ***********************************************************************/
+package com.hyt.entity;
 
 import java.util.*;
 
 /**
  * 用户微信信息
- *
- * @pdOid b2b617d0-14b3-43d4-97da-06d93a66112a
  */
 public class UserwxInfo {
-    /**
-     * @pdOid f81eae69-4437-458e-a59b-cdd38cad8624
-     */
-    private int subscribe;
-    /**
-     * @pdOid f8975fd5-66ec-4c70-979b-99df1419e426
-     */
-    private String openid;
-    /**
-     * @pdOid 1dadb7a5-7045-45c3-af25-d730a5102881
-     */
-    private String nickname;
-    /**
-     * @pdOid 21662716-8b08-46e6-ae10-783a44496194
-     */
-    private String sex;
-    /**
-     * @pdOid e0705f1c-99e1-402c-bc39-6cdcc1d73a8b
-     */
-    private String city;
-    /**
-     * @pdOid 4d094f74-4e27-4b35-8757-d37de1e83334
-     */
-    private String country;
-    /**
-     * @pdOid 67cde1d3-06d1-4712-894b-cc2e3f60f703
-     */
-    private String province;
-    /**
-     * @pdOid 830ecb87-833b-4a24-946e-e62bd0dcdc81
-     */
-    private String language;
-    /**
-     * @pdOid 742b8a8b-cd4e-4f75-afcd-48d96a735ac8
-     */
-    private String headimgurl;
-    /**
-     * @pdOid d3b7c101-adab-4144-92b4-65077e63dfa0
-     */
-    private String subscribeTime;
-    /**
-     * @pdOid 3f0f3c4c-853a-49cb-893b-a86b62f61809
-     */
-    private String unionid;
-    /**
-     * @pdOid b32db8a0-883f-4ded-a022-f9de3cc98a1c
-     */
-    private String remark;
-    /**
-     * @pdOid 83cf7212-a360-4976-9912-d08dcbc46fc1
-     */
-    private String groupid;
-    /**
-     * @pdOid eaa32f3a-5358-42ff-a103-411320bc563e
-     */
-    private String tagidList;
-    /**
-     * @pdOid 2252d345-dade-4a1f-94a7-8a06abffd637
-     */
-    private String subscribeScene;
-    /**
-     * @pdOid 2d6b353c-3e70-4308-a200-afbdf5dd18db
-     */
-    private String qrScene;
-    /**
-     * @pdOid 7cf9f5d4-c429-45b2-a330-06e54701f5b7
-     */
-    private String qrSceneStr;
-    /**
-     * @pdOid 3ceb654f-9d3d-4f24-80ae-cd8f6444c9c4
-     */
-    private UserInfo userId;
-    /**
-     * @pdOid 97e33124-a533-4b6a-8409-14cfa3d06a15
-     */
-    private Date createTime;
-    /**
-     * @pdOid cc0208b8-aee1-478a-ae7d-044661348ee7
-     */
-    private String createUserId;
-    /**
-     * @pdOid 6395b09a-35ee-4ca7-94ed-6e8758610cac
-     */
-    private int state;
-    /**
-     * @pdOid c8852eac-b8ba-4bec-bea5-9c31a6966885
-     */
-    private EwmInfo ewmId;
-    /**
-     * @pdOid c3eb8ca2-e93b-410b-a53a-a930b8832a5e
-     */
+
     private String id;
-    /**
-     * @pdOid 2b29fc4e-8e98-4baf-9e9e-da75644990d1
-     */
-    private Date updateTime;
-    /**
-     * @pdOid 9211042f-06dc-4161-ba6e-0e7c6d16670a
-     */
-    private String updateUserId;
-    /**
-     * @pdOid d9577406-f998-47ae-becf-a954919dc603
-     */
+
+    private int subscribe;
+
+    private String openid;
+
+    private String nickname;
+
+    private String sex;
+
+    private String city;
+
+    private String country;
+
+    private String province;
+
+    private String language;
+
+    private String headimgurl;
+
+    private String subscribeTime;
+
+    private String unionid;
+
+    private String remark;
+
+    private String groupid;
+
+    private String tagidList;
+
+    private String subscribeScene;
+
+    private String qrScene;
+
+    private String qrSceneStr;
+
+    private UserInfo userId;
+
+    private EwmInfo ewmId;
+
     private Area areaId;
 
+    private int state;
+
+    private Date createTime;
+
+    private String createUser;
+
+    private Date updateTime;
+
+    private String updateUser;
 
     public int getSubscribe() {
         return subscribe;
@@ -270,14 +211,6 @@ public class UserwxInfo {
         this.createTime = createTime;
     }
 
-    public String getCreateUserId() {
-        return createUserId;
-    }
-
-    public void setCreateUserId(String createUserId) {
-        this.createUserId = createUserId;
-    }
-
     public int getState() {
         return state;
     }
@@ -310,12 +243,20 @@ public class UserwxInfo {
         this.updateTime = updateTime;
     }
 
-    public String getUpdateUserId() {
-        return updateUserId;
+    public String getCreateUser() {
+        return createUser;
     }
 
-    public void setUpdateUserId(String updateUserId) {
-        this.updateUserId = updateUserId;
+    public void setCreateUser(String createUser) {
+        this.createUser = createUser;
+    }
+
+    public String getUpdateUser() {
+        return updateUser;
+    }
+
+    public void setUpdateUser(String updateUser) {
+        this.updateUser = updateUser;
     }
 
     public Area getAreaId() {

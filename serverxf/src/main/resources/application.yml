@@ -23,7 +23,7 @@ spring:
     expose-spring-macro-helpers: false
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/Hyt
+    url: jdbc:mysql://127.0.0.1:3306/hyt
     username: root
     password: root
 
