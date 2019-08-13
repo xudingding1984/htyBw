@@ -3,9 +3,9 @@
 
 <mapper namespace="com.hyt.dao.UserInfoMapper">
     <select id="getAll" resultType="UserInfo">
-        SELECT * FROM 	user_info
+        SELECT * FROM 	t_hyt_userinfo
 	</select>
     <select id="getCount" resultType="int">
-        SELECT count(1) FROM 	user_info
+        SELECT count(1) FROM 	t_hyt_userinfo
 	</select>
 </mapper>

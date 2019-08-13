@@ -1,31 +1,57 @@
-package com.hyt.entity;
+package com.hyt.entity; /***********************************************************************
+ * Module:  EwmInfo.java
+ * Author:  xdd
+ * Purpose: Defines the Class EwmInfo
+ ***********************************************************************/
 
 import java.util.*;
 
 /**
  * 二维码信息
+ *
+ * @pdOid 13c312f6-86d2-4544-8bf7-11d14180eca2
  */
 public class EwmInfo {
-
+    /**
+     * @pdOid 087ba8df-ab91-4568-bd2e-f28992ac4a8f
+     */
     private UserInfo userId;
-
+    /**
+     * @pdOid 812442b8-5d03-44e2-bac9-3df545273e08
+     */
     private String wxoppenId;
-
+    /**
+     * @pdOid ce81ccc5-fa58-439d-bd63-d84e6b25e817
+     */
     private String baseStr;
-
+    /**
+     * @pdOid 50ef6bd1-c92e-470d-be64-6f1de2e0829d
+     */
     private String id;
-
-    private int state;
-
-    private String imgUrl;
-
+    /**
+     * @pdOid 60cd86e7-1ae7-4ee1-b82a-28b1c469734f
+     */
     private Date updateTime;
-
-    private String updateUser;
-
+    /**
+     * @pdOid 1bf20fef-e3e6-467e-82fe-beb844d6020f
+     */
+    private String updateUserId;
+    /**
+     * @pdOid da23d54a-762c-4704-ae95-48df9dfdd8fa
+     */
     private Date createTime;
-
-    private String createUser;
+    /**
+     * @pdOid 4de233c3-85e2-46ad-bb70-79c82a4f2057
+     */
+    private String createUserId;
+    /**
+     * @pdOid c849d8d4-2bcb-479d-b3dc-056fc06c5640
+     */
+    private int state;
+    /**
+     * @pdOid 5f9eb15e-2c47-45ef-ad88-6f81864190c8
+     */
+    private String imgurl;
 
     public UserInfo getUserId() {
         return userId;
@@ -67,6 +93,13 @@ public class EwmInfo {
         this.updateTime = updateTime;
     }
 
+    public String getUpdateUserId() {
+        return updateUserId;
+    }
+
+    public void setUpdateUserId(String updateUserId) {
+        this.updateUserId = updateUserId;
+    }
 
     public Date getCreateTime() {
         return createTime;
@@ -76,28 +109,12 @@ public class EwmInfo {
         this.createTime = createTime;
     }
 
-    public String getUpdateUser() {
-        return updateUser;
+    public String getCreateUserId() {
+        return createUserId;
     }
 
-    public void setUpdateUser(String updateUser) {
-        this.updateUser = updateUser;
-    }
-
-    public String getCreateUser() {
-        return createUser;
-    }
-
-    public void setCreateUser(String createUser) {
-        this.createUser = createUser;
-    }
-
-    public String getImgUrl() {
-        return imgUrl;
-    }
-
-    public void setImgUrl(String imgUrl) {
-        this.imgUrl = imgUrl;
+    public void setCreateUserId(String createUserId) {
+        this.createUserId = createUserId;
     }
 
     public int getState() {
@@ -108,4 +125,11 @@ public class EwmInfo {
         this.state = state;
     }
 
+    public String getImgurl() {
+        return imgurl;
+    }
+
+    public void setImgurl(String imgurl) {
+        this.imgurl = imgurl;
+    }
 }

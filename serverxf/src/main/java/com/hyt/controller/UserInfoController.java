@@ -24,7 +24,7 @@ public class UserInfoController {
         Pagination pagination = userInfoServer.getAll(vo);
         ModelAndView mv = new ModelAndView();
         mv.addObject("pagination",pagination);
-        mv.setViewName("../back/index");
+        mv.setViewName("../../back/index");
         return mv;
     }
 }

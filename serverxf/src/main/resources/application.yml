@@ -23,11 +23,11 @@ spring:
     expose-spring-macro-helpers: false
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/hyt
+    url: jdbc:mysql://127.0.0.1:3306/Hyt
     username: root
     password: root
 
 
 mybatis:
-  mapperLocations : classpath*:com/hyt/mapper/*.xml
-  typeAliasesPackage : com.hyt.entity
+  mapperLocations: classpath*:com/hyt/mapper/*.xml
+  typeAliasesPackage: com.hyt.entity
